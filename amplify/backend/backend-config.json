@@ -1,0 +1,141 @@
+{
+  "auth": {
+    "kawsayaplication83355126": {
+      "customAuth": false,
+      "dependsOn": [],
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "serviceType": "imported"
+    }
+  },
+  "parameters": {
+    "AMPLIFY_auth_kawsayaplication1abf60b8_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication1abf60b8"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplication1abf60b8_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication1abf60b8"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplication1abf60b8_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication1abf60b8"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplication1abf60b8_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication1abf60b8"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplication51c81638_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication51c81638"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplication51c81638_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication51c81638"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplication51c81638_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication51c81638"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplication51c81638_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication51c81638"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplication83355126_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication83355126"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplication83355126_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication83355126"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplication83355126_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication83355126"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplication83355126_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplication83355126"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplicationc0c5fecb_nativeClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplicationc0c5fecb"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplicationc0c5fecb_userPoolId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplicationc0c5fecb"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplicationc0c5fecb_userPoolName": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplicationc0c5fecb"
+        }
+      ]
+    },
+    "AMPLIFY_auth_kawsayaplicationc0c5fecb_webClientId": {
+      "usedBy": [
+        {
+          "category": "auth",
+          "resourceName": "kawsayaplicationc0c5fecb"
+        }
+      ]
+    }
+  }
+}
