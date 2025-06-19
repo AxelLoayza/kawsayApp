@@ -1,0 +1,5 @@
+<!-- res/color/bottom_nav_color.xml -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_checked="true" android:color="#6200EE" /> <!-- Color cuando está seleccionado -->
+    <item android:color="#757575" /> <!-- Color por defecto -->
+</selector>
