@@ -1,9 +1,105 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.KawsayApp" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <style name="Base.Theme.Kawsayapp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Colores Primarios: Controlan la Toolbar y la Status Bar -->
+        <item name="colorPrimary">@color/k_header_purple</item>
+        <item name="colorPrimaryVariant">@color/k_deep_purple</item>
+        <item name="colorOnPrimary">@color/white</item> <!-- Color de texto/iconos EN la Toolbar -->
+
+        <!-- Color de fondo principal de la pantalla -->
+        <item name="android:windowBackground">@color/k_light_lavender_bg</item>
+
+        <!-- Color para superficies genéricas (como tarjetas, si no se especifica otro) -->
+        <item name="colorSurface">@color/white</item>
+
+        <!-- Color de texto principal sobre fondos claros -->
+        <item name="android:textColorPrimary">@color/k_text_dark</item>
     </style>
 
-    <style name="Theme.KawsayApp" parent="Base.Theme.KawsayApp" />
+    <style name="Theme.Kawsayapp" parent="Base.Theme.Kawsayapp" />
+
+    <!-- Estilo para la Barra de Navegación Inferior -->
+    <style name="BottomNavigation.Theme" parent="Widget.Material3.BottomNavigationView">
+        <item name="itemIconTint">@color/bottom_nav_selector</item>
+        <item name="itemTextColor">@color/bottom_nav_selector</item>
+        <item name="itemActiveIndicatorStyle">@style/App.BottomNavigationView.ActiveIndicator</item>
+    </style>
+
+    <style name="App.BottomNavigationView.ActiveIndicator" parent="Widget.Material3.BottomNavigationView.ActiveIndicator">
+        <!-- El color del "círculo" del ítem activo -->
+        <item name="android:color">@color/k_purple_light</item>
+    </style>
+
+
+
+
+
+    <!-- Estilo para cada opción del menú en el perfil -->
+    <style name="ProfileMenuItem" parent="Widget.AppCompat.TextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingHorizontal">20dp</item>
+        <item name="android:paddingVertical">16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:drawablePadding">20dp</item>
+        <item name="android:textColor">@color/k_text_dark</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="drawableTint">@color/k_purple_medium</item>
+    </style>
+
+    <!-- Estilo para el divisor entre las opciones del menú -->
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/k_purple_light</item>
+        <item name="android:layout_marginStart">72dp</item>
+
+    </style>
+    <!-- Estilo para los emojis de estado de ánimo -->
+    <style name="MoodEmoji" parent="">
+        <item name="android:layout_width">60dp</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:background">@drawable/bg_emoji_selector</item>
+        <item name="tint">@color/white</item>
+    </style>
+
+    <!-- Estilos para las tarjetas de acción verticales -->
+    <style name="HomeActionCard" parent="Widget.Material3.CardView.Elevated">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardBackgroundColor">@color/white</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="strokeWidth">0dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="HomeActionCard.Content" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:padding">20dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="HomeActionCard.Icon" parent="">
+        <item name="android:layout_width">32dp</item>
+        <item name="android:layout_height">32dp</item>
+        <item name="tint">@color/k_purple_medium</item>
+    </style>
+
+    <style name="HomeActionCard.Text" parent="">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/k_text_dark</item>
+        <item name="android:textStyle">bold</item>
+    </style>
 </resources>

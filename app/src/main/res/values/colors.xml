@@ -1,5 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Colores Base por Defecto -->
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- ============================================= -->
+    <!--      PALETA DE COLORES "KAWSAI ATARDECER"     -->
+    <!-- ============================================= -->
+
+    <!-- Morados para Fondos y Headers -->
+    <color name="k_deep_purple">#4A235A</color>
+    <color name="k_header_purple">#512E5F</color>
+    <color name="k_purple_medium">#5E35B1</color>
+    <color name="k_purple_dark">#311B92</color>
+
+    <!-- Morado para las Tarjetas de Publicaciones -->
+    <color name="k_card_purple">#6A417D</color>
+
+    <!-- Fondos Claros -->
+    <color name="k_light_lavender_bg">#F5EEF8</color>
+    <color name="k_purple_light">#EDE7F6</color>
+
+    <!-- Colores de Texto -->
+    <color name="k_text_on_dark_primary">#FFFFFF</color>
+    <color name="k_text_on_dark_secondary">#E8DAEF</color>
+    <color name="k_text_dark">#311B92</color>
+    <color name="k_text_gray">#6A6A6A</color>
+    <color name="k_text_primary">#212121</color>
+    <color name="k_text_secondary">#757575</color>
+
+    <!-- Colores del Gradiente para Botones de Acción -->
+    <color name="k_sunset_pink">#D81B60</color>
+    <color name="k_sunset_orange">#F4511E</color>
+    <color name="k_gradient_pink_start">#EC407A</color>
+    <color name="k_gradient_orange_end">#FFB74D</color>
+
+    <!-- Otros Colores de UI -->
+    <color name="k_charcoal_dark">#37474F</color>
+
 </resources>

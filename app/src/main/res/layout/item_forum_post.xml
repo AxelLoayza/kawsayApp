@@ -3,22 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    app:cardCornerRadius="12dp"
-    app:cardElevation="2dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="0dp"
+    app:cardBackgroundColor="@color/k_card_purple"
     app:cardUseCompatPadding="true">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp">
+        android:padding="20dp">
 
         <TextView
             android:id="@+id/post_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ana Perez"
-            android:textColor="#673AB7"
-            android:textStyle="bold"
+            android:text="Ana Pérez"
+            android:textColor="@color/k_text_on_dark_secondary"
+            android:textSize="14sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -28,8 +29,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
             android:text="¿Técnicas de respiración para ataques de pánico?"
-            android:textColor="@color/black"
-            android:textSize="18sp"
+            android:textColor="@color/k_text_on_dark_primary"
+            android:textSize="20sp"
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -39,39 +40,55 @@
             android:id="@+id/post_body"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="6dp"
             android:text="He probado la respiración 4-7-8 pero me gustaría conocer otras..."
-            android:textColor="#424242"
+            android:textColor="@color/k_text_on_dark_secondary"
+            android:textSize="16sp"
+            android:maxLines="2"
+            android:ellipsize="end"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/post_title" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="20dp"
             android:orientation="horizontal"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/post_body">
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/button_vote"
-                style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_post_button_outline"
                 android:text="Votar (12)"
-                app:icon="@android:drawable/ic_menu_myplaces"
-                app:iconTint="#FF9800"/>
+                android:textAllCaps="false"
+                android:textColor="@color/k_text_on_dark_secondary"
+                app:icon="@drawable/ic_thumb_up"
+                app:iconTint="@color/k_text_on_dark_secondary"
+                app:iconPadding="8dp"
+                app:iconGravity="textStart"
+                app:iconSize="16dp"/>
 
-            <com.google.android.material.button.MaterialButton
+            <Button
                 android:id="@+id/button_reply"
                 style="?attr/materialButtonOutlinedStyle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_post_button_outline"
                 android:text="Responder"
-                app:icon="@android:drawable/ic_menu_revert" />
+                android:textAllCaps="false"
+                android:textColor="@color/k_text_on_dark_secondary"
+                app:icon="@drawable/ic_reply"
+                app:iconTint="@color/k_text_on_dark_secondary"
+                app:iconPadding="8dp"
+                app:iconGravity="textStart"
+                app:iconSize="16dp"/>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </com.google.android.material.card.MaterialCardView>
